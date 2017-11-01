@@ -25,6 +25,8 @@
 #import "RDVTabBarItem.h"
 #import <objc/runtime.h>
 
+
+
 @interface UIViewController (RDVTabBarControllerItemInternal)
 
 - (void)rdv_setTabBarController:(RDVTabBarController *)tabBarController;
@@ -202,7 +204,7 @@
         CGFloat tabBarHeight = CGRectGetHeight([[weakSelf tabBar] frame]);
         
         if (!tabBarHeight) {
-            tabBarHeight = 49;
+            tabBarHeight = LL_TabbarHeight;
         }
         
         if (!weakSelf.tabBarHidden) {

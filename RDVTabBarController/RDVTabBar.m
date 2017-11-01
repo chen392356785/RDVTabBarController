@@ -83,7 +83,7 @@
         
         [item setFrame:CGRectMake(self.contentEdgeInsets.left + (index * self.itemWidth),
                                   roundf(frameSize.height - itemHeight) - self.contentEdgeInsets.top,
-                                  self.itemWidth, itemHeight - self.contentEdgeInsets.bottom)];
+                                  self.itemWidth, itemHeight - self.contentEdgeInsets.bottom - LL_TabbarSafeBottomMargin)];
         [item setNeedsDisplay];
         
         index++;
