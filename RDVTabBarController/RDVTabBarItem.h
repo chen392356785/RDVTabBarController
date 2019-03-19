@@ -29,7 +29,7 @@
 #define  LL_ScreenHeight  [UIScreen mainScreen].bounds.size.height
 
 // iPhone X
-#define  LL_iPhoneX (LL_ScreenWidth == 375.f && LL_ScreenHeight == 812.f ? YES : NO)
+#define  LL_iPhoneX (LL_ScreenWidth >= 375.f && LL_ScreenHeight >= 812.f ? YES : NO)
 #define  LL_TabbarHeight         (LL_iPhoneX ? (49.f+34.f) : 49.f)
 #define  LL_TabbarSafeBottomMargin         (LL_iPhoneX ? 34.f : 0.f)
 
